@@ -13,13 +13,13 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7422740043:AAGF5b94e9fT6970U5RfOqSKmJXX0tULZ2g")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", " 29628312"))
+APP_ID = int(os.environ.get("APP_ID", "29628312"))
 
 #Your API Hash from my.telegram.org
 API_HASH = os.environ.get("API_HASH", "09384c20a76a08fe4bdd8c3f4a0f2aaa")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", " -1002176036656"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002176036656"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1204461723"))
@@ -49,7 +49,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>Heyyy {mention}, I noticed that you haven't joined SeriesPeek (https://t.me/SeriesPeek) yet.🧐 /nDo you wanna die???😾🔪</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "{filename} /n•────•────────•────• /n📌 ᴅɪsᴄᴜssɪᴏɴ : ᴄʟɪᴄᴋ ʜᴇʀᴇ (https://t.me/SeriesPeekDiscussion) /n©️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ᴄʟɪᴄᴋ ʜᴇʀᴇ (https://t.me/SeriesPeek) /n⚜️ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ : ᴄʟɪᴄᴋ ʜᴇʀᴇ (https://t.me/NeecheSeTopperr) /n•────•────────•────• /n🎗 ʝσιи • ѕнαяє • ѕυρρσят 🎗")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
